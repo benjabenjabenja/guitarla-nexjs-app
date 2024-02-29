@@ -1,5 +1,5 @@
 import Layout from '@/components/layout';
-import Link from 'next/link';
+import GuitarList from '@/components/guitar-list';
 
 export const metadata = {
     title: "market - NextJS",
@@ -9,8 +9,12 @@ export const metadata = {
 const Market = () => {
     return (
         <Layout>
-            <h2>From market</h2>
-            <Link href="/">Back to home</Link>
+            <main className="contenedor">
+                <h1 className='heading'> Market </h1>
+                <GuitarList
+                    
+                />
+            </main>
         </Layout>
     );
 }

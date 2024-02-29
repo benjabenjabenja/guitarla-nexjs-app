@@ -1,0 +1,66 @@
+.header {
+    background-image: linear-gradient(to right, rgb(0 0 0 / .7), rgb(0 0 0 /.5)), url('/img/header.jpg');
+    padding: 6rem 0;
+    background-size: cover;
+    background-position: center center;
+}
+.barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .5s ease-in-out;
+    width: min(95%, 120rem);
+	margin: 3rem auto;
+}
+.logo {
+    width: 25rem;
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+.link {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: .5rem 1.5rem;
+    transition: all .7s ease-in-out;
+    border-radius: 25rem;
+    text-wrap: nowrap;
+    text-align: center;
+}
+.active {
+    outline: 1px solid var(--primary);
+}
+.link.cart:hover,
+.link:hover {
+    background-color: var(--primary);
+    text-shadow: 0 0 2px black;
+}
+.cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart img {
+    margin: 0 auto;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navigation {
+        margin-top: 0;
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
